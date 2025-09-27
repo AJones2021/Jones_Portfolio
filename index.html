@@ -1,1 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anna Jones * Porfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src=""></script>
+</head>
+<body>
+    <main>
+    <header aria-label="Top header">
+        <div class="brand">
+            <div class="logo" aria-hidden="true">AN</div>
+            <div>
+                <div style="font-weight: bold;">Anna Jones</div>
+                <div style="font-size: 13px;color:var(--muted);">Software Engineer</div>
+            </div>
+        </div>
+        <nav class="nav" aria-label="Primary navigation">
+                <a href="#">About Me</a>
+                <a href="#">Skills</a>
+                <a href="#">Resume</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="section hero">
+        <div class="avatar" aria-hidden="true">AJ</div>
+        <div>
+            <h1 id="about-title">Hi, I'm Anna.</h1>
+            <div class="tagline">Full-Stack Software Engineer</div>
+            <p>---</p>
+           
+           <div style="margin-top: 14px;display:flex;gap:12px;flex-wrap: wrap;">
+            <a href="#resume" class="download">Download Resume (PDF)</a>
+           <button class="btn outline" onclick="document.getElementById('Projects')">View my work</button>
+        </div>
+
+   
+        <!-- Skills -->
+        <div style="margin-top:12px">
+          <div style="font-weight:700;margin-bottom:8px;font-size:14px">Skills</div>
+          <div class="skills" aria-hidden="false">
+            <span class="skill"><span class="dot"></span> JavaScript</span>
+            <span class="skill"><span class="dot" style="background:var(--accent-2)"></span> Node.js</span>
+            <span class="skill"><span class="dot"></span> React</span>
+            <span class="skill"><span class="dot"></span> Docker</span>
+            <span class="skill"><span class="dot"></span> Kubernetes</span>
+            <span class="skill"><span class="dot"></span> SQL / MongoDB</span>
+            <span class="skill"><span class="dot"></span> CI / CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" style="margin:0 0 12px 0">Projects</h2>
+      <p style="margin:0 0 18px 0;color:var(--muted)">Featured work — click to view details or the code.</p>
+
+      <div class="projects-grid" role="list">
+        <!-- Project 1 -->
+        <article class="project" role="listitem" aria-labelledby="p1-title">
+          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="project-body">
+            <h3 id="p1-title">Secure Vacation App (Capstone)</h3>
+            <p>Login system with secure password hashing, protected endpoints, and an excursions planner.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+              <div class="techs" aria-hidden="true">
+                <small style="font-weight:700;color:var(--muted)">React • Node • MongoDB • Docker</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a class="btn" href="#" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn outline" href="#" target="_blank" rel="noopener">View code</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project" role="listitem" aria-labelledby="p2-title">
+          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="project-body">
+            <h3 id="p2-title">CI/CD Pipeline Demo</h3>
+            <p>Automated pipeline using GitHub Actions, Docker builds and deploy to a cloud container service.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">GitHub Actions • Docker • Terraform</small></div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a class="btn" href="#">Read more</a>
+            <a class="btn outline" href="#">View code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project" role="listitem" aria-labelledby="p3-title">
+          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="project-body">
+            <h3 id="p3-title">Data Dashboard</h3>
+            <p>Interactive dashboard showing analytics built from a MongoDB dataset and charting library.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">React • Express • Charting</small></div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a class="btn" href="#">Live demo</a>
+            <a class="btn outline" href="#">View code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="section center" id="resume" aria-labelledby="resume-title">
+      <h2 id="resume-title" style="margin:0">Resume</h2>
+      <p style="color:var(--muted);margin:6px 0 12px 0">Download a one-page summary or open the full PDF.</p>
+      <a class="download" href="assets/Anna-Jones-Resume.pdf" download>Download resume (PDF)</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="margin:0 0 12px 0">Contact</h2>
+      <p style="margin:0 0 12px 0;color:var(--muted)">Interested in working together? Send a quick message.</p>
+
+      <form onsubmit="handleForm(event)" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@company.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Hi! I'd like to talk about..."></textarea>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <button type="submit" class="download">Send message</button>
+          <div style="color:var(--muted);font-size:13px">or email me at <a href="mailto:anna.jones@example.com">anna.jones@example.com</a></div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Anna Jones — <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> • <a href="#" rel="noopener">LinkedIn</a>
+    </footer>
+  </main>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleForm(e){
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      // demo behavior: show a quick in-page "sent" message
+      setTimeout(() => {
+        btn.textContent = 'Sent ✓';
+        e.target.reset();
+        setTimeout(()=> {
+          btn.disabled = false;
+          btn.textContent = 'Send message';
+        }, 1500);
+      }, 900);
+
+      // TODO: hook this into your real backend or an email service:
+      // - Netlify forms, Formspree, or your own serverless function
+    }
+
+    // Smooth scroll for same-page links (for older browsers)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (ev) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          ev.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Accessibility focus outline for keyboard users only
+    (function(){
+      function handleFirstTab(e){
+        if(e.key === 'Tab'){
+          document.body.classList.add('show-focus-outline');
+          window.removeEventListener('keydown', handleFirstTab);
+        }
+      }
+      window.addEventListener('keydown', handleFirstTab);
+    })();
+  </script>
+</body>
+</html>
