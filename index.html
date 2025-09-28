@@ -66,23 +66,22 @@
     <!-- Projects -->
     <section class="section" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title" style="margin:0 0 12px 0">Projects</h2>
-      <p style="margin:0 0 18px 0;color:var(--muted)">Featured work — click to view details or the code.</p>
+      <p style="margin:0 0 18px 0;color:var(--muted)">Featured work — click to view details.</p>
 
       <div class="projects-grid" role="list">
         <!-- Project 1 -->
         <article class="project" role="listitem" aria-labelledby="p1-title">
           <div class="thumb" aria-hidden="true">Thumbnail</div>
           <div class="project-body">
-            <h3 id="p1-title">Secure Vacation App (Capstone)</h3>
+            <h3 id="p1-title">Android Vacation App (Capstone)</h3>
             <p>Login system with secure password hashing, protected endpoints, and an excursions planner.</p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
               <div class="techs" aria-hidden="true">
-                <small style="font-weight:700;color:var(--muted)">React • Node • MongoDB • Docker</small>
+                <small style="font-weight:700;color:var(--muted)">Java </small>
               </div>
             </div>
           </div>
           <div class="project-footer">
-            <a class="btn" href="#" target="_blank" rel="noopener">Live demo</a>
             <a class="btn outline" href="#" target="_blank" rel="noopener">View code</a>
           </div>
         </article>
@@ -91,14 +90,14 @@
         <article class="project" role="listitem" aria-labelledby="p2-title">
           <div class="thumb" aria-hidden="true">Thumbnail</div>
           <div class="project-body">
-            <h3 id="p2-title">CI/CD Pipeline Demo</h3>
+            <h3 id="p2-title">Advance Java</h3>
             <p>Automated pipeline using GitHub Actions, Docker builds and deploy to a cloud container service.</p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
-              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">GitHub Actions • Docker • Terraform</small></div>
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java • HTML • JavaScript • TypeScript</small></div>
             </div>
           </div>
           <div class="project-footer">
-            <a class="btn" href="#">Read more</a>
+          
             <a class="btn outline" href="#">View code</a>
           </div>
         </article>
@@ -107,14 +106,13 @@
         <article class="project" role="listitem" aria-labelledby="p3-title">
           <div class="thumb" aria-hidden="true">Thumbnail</div>
           <div class="project-body">
-            <h3 id="p3-title">Data Dashboard</h3>
+            <h3 id="p3-title">Backend Programming</h3>
             <p>Interactive dashboard showing analytics built from a MongoDB dataset and charting library.</p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
-              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">React • Express • Charting</small></div>
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java</small></div>
             </div>
           </div>
           <div class="project-footer">
-            <a class="btn" href="#">Live demo</a>
             <a class="btn outline" href="#">View code</a>
           </div>
         </article>
@@ -124,16 +122,16 @@
     <!-- Resume -->
     <section class="section center" id="resume" aria-labelledby="resume-title">
       <h2 id="resume-title" style="margin:0">Resume</h2>
-      <p style="color:var(--muted);margin:6px 0 12px 0">Download a one-page summary or open the full PDF.</p>
-      <a class="download" href="assets/Anna-Jones-Resume.pdf" download>Download resume (PDF)</a>
+      <p style="color:var(--muted);margin:6px 0 12px 0">Download mu one-page resume.</p>
+      <a class="download" href="Jones_Resume.pdf" download>Download resume (PDF)</a>
     </section>
 
     <!-- Contact -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title" style="margin:0 0 12px 0">Contact</h2>
+    <section class="section" id="contact">
+      <h2 style="margin:0 0 12px 0">Contact</h2>
       <p style="margin:0 0 12px 0;color:var(--muted)">Interested in working together? Send a quick message.</p>
 
-      <form onsubmit="handleForm(event)" aria-label="Contact form">
+      <form action="https://formspree.io/f/xkgqopbd" method="POST">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required placeholder="Your name">
 
@@ -145,7 +143,7 @@
 
         <div style="display:flex;gap:12px;align-items:center">
           <button type="submit" class="download">Send message</button>
-          <div style="color:var(--muted);font-size:13px">or email me at <a href="mailto:anna.jones@example.com">anna.jones@example.com</a></div>
+          <div style="color:var(--muted);font-size:13px">or email me at <a href="mailto:anna.jones@example.com">anna_jones2023@outlook.com</a></div>
         </div>
       </form>
     </section>
@@ -174,11 +172,7 @@
         }, 1500);
       }, 900);
 
-      // TODO: hook this into your real backend or an email service:
-      // - Netlify forms, Formspree, or your own serverless function
     }
-
-    // Smooth scroll for same-page links (for older browsers)
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (ev) => {
         const target = document.querySelector(a.getAttribute('href'));
@@ -189,7 +183,6 @@
       });
     });
 
-    // Accessibility focus outline for keyboard users only
     (function(){
       function handleFirstTab(e){
         if(e.key === 'Tab'){
