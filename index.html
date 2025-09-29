@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Anna Jones Porfolio</title>
-    <link  rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Anna Jones Portfolio</title>
+    <!-- Favicon
+    <link  rel="icon" type="image/x-icon" href="favicon.png"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
 
@@ -23,17 +24,19 @@
             </div>
         </div>
         <nav class="nav" aria-label="Primary navigation">
-                <a href="#">About Me</a>
-                <a href="#">Skills</a>
-                <a href="#">Resume</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#avatar">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume-title">Resume</a>
+                <a href="#contact">Contact</a>
         </nav>
     </header>
     <section class="section hero">
-        <div class="avatar" aria-hidden="true">AJ</div>
+        <div class="avatar">
+          <img src="self.jpg" alt="Photo of Anna Jones">
+        </div>
         <div>
-            <h1 id="about-title">Hi, I'm Anna.</h1>
+            <h1 id="about-title">Hello, I'm Anna!</h1>
             <div class="tagline">Full-Stack Software Engineer</div>
             <p>I have completed my bachelor's in software engineering at Western Governors University and will be starting my master's in software engineering with a specialization in AI Engineering in November 2025.
             Certified in CompTIA Project+, Front-End Development, and Python. I have built responsive, user-friendly web applications and collaborated on projects emphasizing usability and reliability.</p>
@@ -53,11 +56,12 @@
       <section class="section" id="skills">
         <h2>Skills</h2>
           <div class="skills">
+            <span class="skill"><span class="dot"></span> Java</span>
+            <span class="skill"><span class="dot"></span> Python</span>
             <span class="skill"><span class="dot"></span> JavaScript</span>
-            <span class="skill"><span class="dot" style="background:var(--accent-2)"></span> Node.js</span>
+            <span class="skill"><span class="dot"></span> Node.js</span>
             <span class="skill"><span class="dot"></span> React</span>
             <span class="skill"><span class="dot"></span> Docker</span>
-            <span class="skill"><span class="dot"></span> Kubernetes</span>
             <span class="skill"><span class="dot"></span> SQL / MongoDB</span>
             <span class="skill"><span class="dot"></span> CI / CD</span>
           </div>
@@ -122,14 +126,14 @@
     <!-- Resume -->
     <section class="section center" id="resume" aria-labelledby="resume-title">
       <h2 id="resume-title" style="margin:0">Resume</h2>
-      <p style="color:var(--muted);margin:6px 0 12px 0">Download mu one-page resume.</p>
+      <p style="color:var(--muted);margin:6px 0 12px 0">Download one-page resume!</p>
       <a class="download" href="Jones_Resume.pdf" download>Download resume (PDF)</a>
     </section>
 
     <!-- Contact -->
     <section class="section" id="contact">
       <h2 style="margin:0 0 12px 0">Contact</h2>
-      <p style="margin:0 0 12px 0;color:var(--muted)">Interested in working together? Send a quick message.</p>
+      <p style="margin:0 0 12px 0;color:var(--muted)">Interested in working together? Send a quick message!</p>
 
       <form action="https://formspree.io/f/xkgqopbd" method="POST">
         <label for="name">Name</label>
