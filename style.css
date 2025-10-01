@@ -1,7 +1,7 @@
  :root{
       --bg: #d9e6ee;
       --card: #ffffff;
-      --muted: rgb(28, 119, 240);
+      --muted: rgb(164, 167, 170);
       --accent: #254b9c; 
       --accent-2: #7ccae9;
       --radius: 12px;
@@ -139,13 +139,13 @@
       gap: 12px;
       margin-top: 12px;
     }
-    .social-links img {
-      width: 28px;
-      height: 28px;
-      transition: transform 0.2s;
+    .social-links a {
+      color: var(--accent);
+      font-size: 24px;
+      transition: color 0.3s;
     }
-    .social-links img:hover {
-      transform: scale(1.1);
+    .social-links a:hover {
+      color: var(--accent-2);
     }
     /* Skills */
     .skills{
