@@ -1,14 +1,15 @@
  :root{
-      --bg: #d9e6ee;
+      --bg: #e1f1fa;
       --card: #ffffff;
-      --muted: rgb(164, 167, 170);
-      --accent: #254b9c; 
-      --accent-2: #7ccae9;
+      --muted: rgb(90, 91, 92);
+      --accent: #1f3a53; 
+      --accent-2: #66a4bd;
       --radius: 12px;
       --max-width: 980px;
       --container-padding: 20px;
       --shadow: 0 6px 21px rgba(22, 29, 41, 0.06);
       --glass: rgba(255,255,255,0.6);
+      --header-offset: 80px;
     }
 
     *{box-sizing:border-box}
@@ -40,11 +41,13 @@
         background: var(--bg);
         padding-top: 80px; 
       }
-    .brand{
-      display:flex;
-      gap:12px;
-      align-items:center;
-    }
+
+
+      .brand{
+        display:flex;
+        gap:12px;
+        align-items:center;
+      }
 
     
     .brand .logo  {
@@ -78,10 +81,10 @@
       font-size:14px;
       padding:8px 12px;
       border-radius:8px;
-       transition: background 0.2s, color 0.2s;
+       /*transition: background 0.2s, color 0.2s;*/
     }
     .nav a:hover {
-      background: var(--muted);
+      background: var(--accent-2);
       color: white;
     }
     .nav a.primary{
@@ -97,6 +100,7 @@
       padding:32px;
       margin-bottom:24px;
       box-shadow:var(--shadow);
+      scroll-margin-top: 100px; 
     }
 
     /* About */
@@ -144,6 +148,21 @@
       font-size: 24px;
       transition: color 0.3s;
     }
+    #skills{
+
+     display:flex;
+      align-items:center;
+      justify-content:center;
+       gap:15px;
+      margin-top: 5px;
+      color: var(--accent);
+      font-size: 24px;
+    }
+    #Skills-title {
+      
+      margin-left: 50%;
+
+    }
     .social-links a:hover {
       color: var(--accent-2);
     }
@@ -166,13 +185,7 @@
       color:#111827;
       font-size:13px;
     }
-    .skill .dot{
-      width:8px;
-      height:8px;
-      border-radius:999px;
-      background:var(--accent);
-      display:inline-block}
-
+ 
     /* Projects */
     .projects-grid{
       display:grid;
@@ -202,7 +215,11 @@
     .techs{display:flex;gap:8px;flex-wrap:wrap}
 
     /* Resume & Contact  */
-    .center{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}
+    .center{display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      gap:10px}
     .download{
       background:linear-gradient(90deg,var(--accent),var(--accent-2));
       color:white;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;
