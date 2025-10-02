@@ -80,49 +80,59 @@
       <div class="projects-grid" role="list">
         <!-- Project 1 -->
         <article class="project" role="listitem" aria-labelledby="p1-title">
-          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="thumb" >
+            <img src="D424.png" alt="Android Vacation App Screenshot">
+          </div>
           <div class="project-body">
-            <h3 id="p1-title">Android Vacation App (Capstone)</h3>
-            <p>Login system with secure password hashing, protected endpoints, and an excursions planner.</p>
+            <h3 id="p1-title">Android Vacation App </h3>
+            <p>A mobile app designed to help users plan vacation and excursions. It includes a secure login system and an intuitive interface for managing trip details. Users can search for vacations with a built-in search feature making it easy to organize trips based on search preferences.</p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
               <div class="techs" aria-hidden="true">
-                <small style="font-weight:700;color:var(--muted)">Java </small>
+                <small style="font-weight:700;color:var(--muted)">Java • Android Studio • SQLite </small>
               </div>
             </div>
           </div>
           <div class="project-footer">
-            <a class="btn outline" href="#" target="_blank" rel="noopener">View code</a>
+            <a class="btn outline" href="https://github.com/AJones2021/android-vacation-planner" target="_blank" rel="noopener">View code</a>
           </div>
         </article>
 
         <!-- Project 2 -->
         <article class="project" role="listitem" aria-labelledby="p2-title">
-          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="thumb" >
+            <img src="D387.png" alt="Advance Java Project Screenshot">
+          </div>
           <div class="project-body">
             <h3 id="p2-title">Advance Java</h3>
-            <p>Automated pipeline using GitHub Actions, Docker builds and deploy to a cloud container service.</p>
+            <p>A project using advanced Java concepts, and enterprise-level development. It includes automation through GitHub Actions, and containerization with Docker.</p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
-              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java • HTML • JavaScript • TypeScript</small></div>
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java • Docker • CI/CD • HTML • TypeScript • JavaScript </small></div>
             </div>
           </div>
           <div class="project-footer">
           
-            <a class="btn outline" href="#">View code</a>
+            <a class="btn outline" href="https://github.com/AJones2021/d387-advanced-java-working_branch"
+            target="_blank" rel="noopener">View code</a>
           </div>
         </article>
 
         <!-- Project 3 -->
         <article class="project" role="listitem" aria-labelledby="p3-title">
-          <div class="thumb" aria-hidden="true">Thumbnail</div>
+          <div class="thumb" >
+            <img src="D288.png" alt="D288 Backend Programming Project Screenshot">
+          </div>
           <div class="project-body">
             <h3 id="p3-title">Backend Programming</h3>
-            <p>Interactive dashboard showing analytics built from a MongoDB dataset and charting library.</p>
+            <p>A full-stack e-commerce site using Spring Boot. During development I was able to develope 
+              the object oriented applications that worked with the relational databases. Develop a customer information input, cart, cartitems, order tracking
+              Implement REST. And lastly, Create two validations: One for customer information, another for items placed in a cart. </p>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
-              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java</small></div>
+              <div class="techs" aria-hidden="true"><small style="font-weight:700;color:var(--muted)">Java • REST API • SQL • Spring Boot</small></div>
             </div>
           </div>
           <div class="project-footer">
-            <a class="btn outline" href="#">View code</a>
+            <a class="btn outline" href="https://github.com/AJones2021/d288-back-end-programming"
+             target="_blank" rel="noopener">View code</a>
           </div>
         </article>
       </div>
@@ -163,7 +173,6 @@
   </main>
 
   <script>
-    // small helpers
     document.getElementById('year').textContent = new Date().getFullYear();
 
     function handleForm(e){
@@ -171,7 +180,6 @@
       const btn = e.target.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.textContent = 'Sending...';
-      // demo behavior: show a quick in-page "sent" message
       setTimeout(() => {
         btn.textContent = 'Sent ✓';
         e.target.reset();
