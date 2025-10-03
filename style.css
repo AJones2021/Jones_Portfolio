@@ -75,7 +75,7 @@
       align-items:center;
     }
     .nav a{
-      color:var(--muted);
+      color:var(--accent);
       text-decoration:none;
       font-weight:600;
       font-size:14px;
@@ -133,6 +133,9 @@
       margin-top:6px;
       font-size:15px}
 
+    .tagline p{
+      text-align: center;
+    }  
     .hero p{
       margin:14px 0 0;
       color:#374151
@@ -256,7 +259,10 @@
     }
 
     /* Contact form */
-    form{display:grid;gap:12px;width:100%;max-width:640px}
+    form{display:grid;
+      gap:12px;
+      width:100%;
+      max-width:640px}
     input[type="text"],input[type="email"],textarea{
       width:100%;padding:12px;border-radius:10px;border:1px solid rgba(2,6,23,0.06);font-size:14px;
       background:#fff;resize:vertical;
