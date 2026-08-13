@@ -19,5 +19,4 @@ I enjoy building practical, user-friendly applications and developing solutions 
 * Certifications
 * Technical skills
 * Software projects
-* Development experience
 * Contact information
